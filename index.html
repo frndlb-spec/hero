@@ -63,7 +63,7 @@
   h1{
     font-family: var(--display); font-weight:900; font-size: clamp(30px,4.4vw,42px);
     line-height:1.12; letter-spacing:-.01em; text-wrap: balance; margin: 0 0 20px;
-    max-width: 15ch;
+    max-width: 16ch;
   }
   h1 em{ font-style: normal; color: var(--accent-bright); }
 
@@ -135,11 +135,7 @@
   .body-text .sign{ margin-top:16px; color: var(--text-dim); font-size:13.5px; }
   .body-text .tag{ font-family: var(--mono); font-size:11.5px; color: var(--accent-bright); letter-spacing:.02em; }
   .fld{ color: var(--accent-bright); font-family: var(--mono); font-size:0.94em; }
-
-  .revised-note{
-    font-size:12.5px; color: var(--warm); margin-top:14px; padding-top:12px;
-    border-top: 1px dashed oklch(0.68 0.18 55 / 0.3); font-style: italic;
-  }
+  .peer{ color: var(--warm); }
 
   footer{
     max-width: 860px; margin: 60px auto 0; padding: 22px 24px; border-top:1px solid var(--border);
@@ -168,22 +164,22 @@
 
 <div class="shell">
 
-  <div class="eyebrow">Strategia Hero · Sequenza email, 10 step</div>
-  <h1>Il ROAS apre la porta.<br>La <em>partnership</em> è la casa.</h1>
-  <p class="lede">Riparte dalla struttura della campagna con l'apertura migliore, sullo stesso database già scritto da Francesco. Cambia l'inquadratura: il dato ROAS 5→13 non è più l'offerta, è l'aggancio di curiosità che porta al vero tema — un partner su identità, canali e performance marketing, non solo su Google Ads.</p>
+  <div class="eyebrow">Strategia Hero · Sequenza email, 9 step</div>
+  <h1>Prima il racconto. <em>Poi la prova.</em></h1>
+  <p class="lede">Stesso database, stessa firma. Ogni email apre sul problema ampio — identità, posizionamento, come vi raccontate sui canali — non sul dato. Il ROAS entra solo a chiusura del primo paragrafo, come prova concreta, mai come promessa iniziale. Il tono resta possibilista: mai un'affermazione certa su chi non conosciamo davvero.</p>
 
-  <p class="quote">"Tu sei bravo. Noi siamo bravi. Pensa cosa può succedere se ci mettiamo insieme."<span>Step 9 — la riga più vicina al copione originale di Gianluca</span></p>
+  <p class="quote">"Voi siete bravi in quello che fate. Anche noi pensiamo di esserlo nel nostro."<span>Il registro alla pari — torna nelle email 1, 4 e 8</span></p>
 
   <div class="stats">
-    <div class="stat"><b>44.6%</b><span>Open rate — camp. 39</span></div>
-    <div class="stat"><b>1.7%</b><span>Bounce — camp. 39</span></div>
-    <div class="stat"><b>10</b><span>Step in sequenza</span></div>
-    <div class="stat"><b>5 / 10</b><span>Step rivisti per il hook</span></div>
+    <div class="stat"><b>44.6%</b><span>Open rate baseline — camp. 39</span></div>
+    <div class="stat"><b>1.7%</b><span>Bounce baseline — camp. 39</span></div>
+    <div class="stat"><b>9</b><span>Step in sequenza</span></div>
+    <div class="stat"><b>3</b><span>Email col registro "alla pari"</span></div>
   </div>
 
   <div class="section-head">
     <h2>La sequenza, step per step</h2>
-    <span class="legend">Rivisto = ROAS spostato da obiettivo a hook</span>
+    <span class="legend">Ogni step: problema → canali → caso a chiusura</span>
   </div>
 
   <div class="sequence">
@@ -191,13 +187,11 @@
     <div class="step">
       <div class="step-num">01</div>
       <div class="card">
-        <div class="subject-row"><span class="env">✉</span><span class="subj">Il ROAS reale di <span class="fld">{{Nome_Ecommerce}}</span></span></div>
+        <div class="subject-row"><span class="env">✉</span><span class="subj"><span class="fld">{{Nome_Ecommerce}}</span>, la partita si gioca sui canali</span></div>
         <div class="body-text">
           <p>Ciao.</p>
-          <p>Ho guardato i principali store <span class="fld">{{Categoria}}</span> su <span class="fld">{{Piattaforma}}</span>: <span class="fld">{{Nome_Ecommerce}}</span> è tra quelli che stanno facendo le cose per bene — non uno dei tanti che arrancano.</p>
-          <p>Lavoriamo da anni con e-commerce nel vostro settore, e la domanda che ci poniamo con chi parte già bene non è "cosa non va", ma "cosa succede se due che vanno bene si mettono insieme".</p>
-          <p>Un e-commerce con il vostro stesso profilo è passato da ROAS 5 a 13 in 90 giorni. Ma il ROAS è solo il punto di partenza del discorso: quello che è successo dopo, con identità e canali gestiti insieme, conta di più.</p>
-          <p>Vale la pena scoprire dove può portare?</p>
+          <p>Chi lavora bene su <span class="fld">{{Piattaforma}}</span> nel settore <span class="fld">{{Categoria}}</span> — e <span class="fld">{{Nome_Ecommerce}}</span> sembra tra questi — prima o poi si scontra con lo stesso limite: le campagne amplificano solo quello che c'è già. <span class="peer">Voi siete bravi in quello che fate. Anche noi pensiamo di esserlo nel nostro.</span> Se identità, posizionamento e il modo in cui vi raccontate online non sono ancora al livello dei risultati che volete, è lì — sui canali, non solo sul budget — che si gioca la partita vera. Un e-commerce nel vostro settore l'ha scoperto lavorando prima sui canali: a parità di budget su Google Ads, il fatturato mensile è passato da 60k a 180k in 90 giorni.</p>
+          <p>Vale la pena scoprire cosa c'è oltre i vostri numeri attuali?</p>
           <p class="sign">Francesco Del Buono<br>Customer Care Italia<br><span class="tag">Facciamo ROAS 13 dove gli altri fanno 5</span></p>
         </div>
       </div>
@@ -206,15 +200,12 @@
     <div class="step">
       <div class="step-num">02</div>
       <div class="card">
-        <div class="subject-row"><span class="env">✉</span><span class="subj">60k o 180k con <span class="fld">{{Piattaforma}}</span>?</span><span class="badge">Rivisto</span></div>
+        <div class="subject-row"><span class="env">✉</span><span class="subj"><span class="fld">{{Nome_Ecommerce}}</span>, struttura o racconto?</span></div>
         <div class="body-text">
           <p>Ciao.</p>
-          <p>Sto analizzando store <span class="fld">{{Categoria}}</span> su <span class="fld">{{Piattaforma}}</span> con una base già solida ma che non estraggono il massimo dal paid.</p>
-          <p>Un e-commerce nel vostro settore è partito esattamente da lì: budget fermo a 60k al mese, campagne che giravano bene ma non benissimo. Abbiamo rivisto la struttura e in 90 giorni è arrivato a 180k. Ma quello che l'ha convinto a restare con noi non è stato il numero — è stato scoprire quanto altro c'era da sistemare fuori dalle campagne: identità, canali, come si raccontava online.</p>
-          <p>Il ROAS gli ha aperto la porta. Il resto ha fatto la differenza.</p>
-          <p>Vale la pena scoprire cosa c'è dietro la porta anche per <span class="fld">{{Nome_Ecommerce}}</span>?</p>
+          <p>Su <span class="fld">{{Piattaforma}}</span>, nel segmento <span class="fld">{{Categoria}}</span>, la differenza tra chi si ferma e chi cresce raramente sta solo nella struttura delle campagne — sta in quanto quella struttura racconta chi siete davvero. <span class="fld">{{Nome_Ecommerce}}</span> sembra già avere le basi solide; quello che spesso manca, anche a chi parte bene, è che i canali dicano la stessa cosa che dice il prodotto. Un e-commerce nel vostro segmento ha rivisto prima il racconto sui canali e solo dopo la struttura Google Ads: stesso budget, ritorno triplicato in 90 giorni.</p>
+          <p>Vale la pena guardarci insieme, prima di toccare una sola campagna?</p>
           <p class="sign">Francesco Del Buono<br>Customer Care Italia<br><span class="tag">Facciamo ROAS 13 dove gli altri fanno 5</span></p>
-          <p class="revised-note">Rivisto — porta d'ingresso, non traguardo: il ROAS diventa metafora esplicita ("gli ha aperto la porta") invece di una riga aggiunta in coda.</p>
         </div>
       </div>
     </div>
@@ -222,14 +213,12 @@
     <div class="step">
       <div class="step-num">03</div>
       <div class="card">
-        <div class="subject-row"><span class="env">✉</span><span class="subj">Struttura o budget?</span><span class="badge">Rivisto</span></div>
+        <div class="subject-row"><span class="env">✉</span><span class="subj">Chi vi sta raccontando meglio?</span></div>
         <div class="body-text">
           <p>Ciao.</p>
-          <p>Ho analizzato store <span class="fld">{{Categoria}}</span> su <span class="fld">{{Piattaforma}}</span> nel vostro segmento: <span class="fld">{{Nome_Ecommerce}}</span> rientra tra quelli messi meglio.</p>
-          <p>Il triplo dallo stesso budget Google Ads è quello che si vede subito in un audit. Quello che si vede dopo, quando ci si siede a guardare tutto insieme, è dove altro state lasciando valore sul tavolo — identità, posizionamento, canali — cose che un audit sulle sole campagne non mostra.</p>
-          <p>L'audit è il pretesto per iniziare a guardarci. Vale la pena farlo?</p>
+          <p>Lavoro con store <span class="fld">{{Categoria}}</span> su <span class="fld">{{Piattaforma}}</span> nel vostro stesso mercato, e la cosa che vedo più spesso non è chi ha il budget più alto: è chi comunica meglio chi è, sui canali giusti. Alcuni competitor di <span class="fld">{{Nome_Ecommerce}}</span> sembrano aver accelerato proprio da lì, non dal budget pubblicitario. Voi avete probabilmente già i fondamentali che a loro mancano — il tema è farli vedere. Un e-commerce comparabile, lavorando su questo, è arrivato da ROAS 5 a 13 in 90 giorni, a parità di spesa.</p>
+          <p>Vale la pena capire dove siete voi in questo confronto?</p>
           <p class="sign">Francesco Del Buono<br>Customer Care Italia<br><span class="tag">Facciamo ROAS 13 dove gli altri fanno 5</span></p>
-          <p class="revised-note">Rivisto — l'audit come pretesto: nominato esplicitamente come mezzo, non come fine.</p>
         </div>
       </div>
     </div>
@@ -237,12 +226,11 @@
     <div class="step">
       <div class="step-num">04</div>
       <div class="card">
-        <div class="subject-row"><span class="env">✉</span><span class="subj">Chi ha sorpassato <span class="fld">{{Nome_Ecommerce}}</span>?</span></div>
+        <div class="subject-row"><span class="env">✉</span><span class="subj"><span class="fld">{{Nome_Ecommerce}}</span>, quanto raccontate di voi?</span></div>
         <div class="body-text">
           <p>Ciao.</p>
-          <p>Lavoro con store <span class="fld">{{Categoria}}</span> su <span class="fld">{{Piattaforma}}</span> nel vostro stesso mercato. Alcuni dei vostri competitor diretti — quelli già forti quanto voi — hanno accelerato negli ultimi mesi, e non solo sulle campagne: hanno ridisegnato come si raccontano.</p>
-          <p>ROAS 5 a 13 in 90 giorni è il dato che si misura subito. Quello che fa la differenza nel tempo è avere un partner che segue tutto il resto insieme a voi.</p>
-          <p>Vale la pena parlarne?</p>
+          <p>Ho guardato <span class="fld">{{Nome_Ecommerce}}</span> tra gli store <span class="fld">{{Categoria}}</span> su <span class="fld">{{Piattaforma}}</span>: il vostro setup sembra funzionare — non sto scrivendo a chi è in difficoltà. <span class="peer">Voi siete bravi in quello che fate. Anche noi pensiamo di esserlo nel nostro.</span> La domanda che faccio a chi parte già da un buon risultato non è se il budget basta, ma se identità e canali stanno raccontando tutto il valore che c'è dietro quel risultato. Un e-commerce nel vostro settore, convinto anche lui che andasse già bene, ha scoperto margine lavorando su questo: ROAS 5 diventato 13 in 90 giorni.</p>
+          <p>Vale la pena scoprire quanto margine avete anche voi?</p>
           <p class="sign">Francesco Del Buono<br>Customer Care Italia<br><span class="tag">Facciamo ROAS 13 dove gli altri fanno 5</span></p>
         </div>
       </div>
@@ -251,14 +239,13 @@
     <div class="step">
       <div class="step-num">05</div>
       <div class="card">
-        <div class="subject-row"><span class="env">✉</span><span class="subj"><span class="fld">{{Nome_Ecommerce}}</span>, ROAS 5 basta?</span><span class="badge">Rivisto</span></div>
+        <div class="subject-row"><span class="env">✉</span><span class="subj">Stefano P. non ci credeva</span></div>
         <div class="body-text">
           <p>Ciao.</p>
-          <p>Ho guardato <span class="fld">{{Nome_Ecommerce}}</span> tra gli store <span class="fld">{{Categoria}}</span> su <span class="fld">{{Piattaforma}}</span>. Il vostro setup funziona — non sto scrivendo a chi è in difficoltà.</p>
-          <p>ROAS 5 è già un buon risultato. Un e-commerce nel vostro settore, partendo esattamente da lì, ci ha chiesto un confronto solo sulle campagne. Ci ha lasciato lavorare tre mesi: ROAS 13. Ma la parte che ha davvero cambiato il suo business è arrivata dopo, quando quel margine trovato nelle campagne gli ha fatto capire che c'era margine anche altrove.</p>
-          <p>Vale la pena scoprire quanto margine avete anche voi — sulle campagne e sul resto?</p>
+          <p>Ho trovato <span class="fld">{{Nome_Ecommerce}}</span> guardando store <span class="fld">{{Categoria}}</span> su <span class="fld">{{Piattaforma}}</span> che sembrano solidi come il vostro. Stefano P. era uno di questi: e-commerce già sano, nessun allarme visibile. Ci ha dato prima solo l'integrazione col gestionale — non si fidava ancora del resto. Poi ci ha lasciato guardare identità e canali, e solo alla fine le campagne, in prova. A fine trimestre ha visto ROAS 13 e non ce le ha più tolte.</p>
+          <p>Non partiva da un problema. Partiva da un buon risultato, raccontato meglio.</p>
+          <p>Vale la pena parlarne, con lo stesso passo — prima piccolo, poi il resto?</p>
           <p class="sign">Francesco Del Buono<br>Customer Care Italia<br><span class="tag">Facciamo ROAS 13 dove gli altri fanno 5</span></p>
-          <p class="revised-note">Rivisto — il margine oltre le campagne: il "dopo" diventa il vero soggetto della frase, non una coda.</p>
         </div>
       </div>
     </div>
@@ -266,13 +253,11 @@
     <div class="step">
       <div class="step-num">06</div>
       <div class="card">
-        <div class="subject-row"><span class="env">✉</span><span class="subj">Stefano P. non ci credeva</span></div>
+        <div class="subject-row"><span class="env">✉</span><span class="subj">16.000 euro al mese</span></div>
         <div class="body-text">
           <p>Ciao.</p>
-          <p>Ho trovato <span class="fld">{{Nome_Ecommerce}}</span> guardando store <span class="fld">{{Categoria}}</span> su <span class="fld">{{Piattaforma}}</span> solidi come il vostro.</p>
-          <p>Stefano P. è arrivato da noi con un e-commerce già sano. Ci ha dato prima solo l'integrazione col gestionale, poi le campagne in prova. A fine trimestre ha visto ROAS 13 e non ce le ha più tolte.</p>
-          <p>Oggi lavoriamo con lui anche su identità e canali digitali — non solo su Google Ads. Non partiva da un problema. Partiva da un buon risultato da moltiplicare su più fronti.</p>
-          <p>Vale la pena parlarne?</p>
+          <p>Ho fatto un calcolo per il segmento <span class="fld">{{Categoria}}</span> su <span class="fld">{{Piattaforma}}</span>: <span class="fld">{{Nome_Ecommerce}}</span> sembra rientrarci. Con ROAS 5 e 2.000 euro al mese in Google Ads, incassate 10.000. Con ROAS 13, stesso budget, sono 26.000. Ma quei 16.000 euro non arrivano solo ottimizzando le campagne: arrivano quando identità e canali raccontano abbastanza bene il prodotto da far convertire chi già clicca. Un e-commerce con il vostro punto di partenza li ha recuperati lavorando su entrambi i fronti, in 90 giorni.</p>
+          <p>Vale la pena parlarne, partendo dal conto?</p>
           <p class="sign">Francesco Del Buono<br>Customer Care Italia<br><span class="tag">Facciamo ROAS 13 dove gli altri fanno 5</span></p>
         </div>
       </div>
@@ -281,15 +266,12 @@
     <div class="step">
       <div class="step-num">07</div>
       <div class="card">
-        <div class="subject-row"><span class="env">✉</span><span class="subj">16.000 euro al mese</span><span class="badge">Rivisto</span></div>
+        <div class="subject-row"><span class="env">✉</span><span class="subj">Hai fatto questo conto?</span></div>
         <div class="body-text">
           <p>Ciao.</p>
-          <p>Ho fatto un calcolo per il segmento <span class="fld">{{Categoria}}</span> su <span class="fld">{{Piattaforma}}</span>: <span class="fld">{{Nome_Ecommerce}}</span> ci rientra.</p>
-          <p>Con ROAS 5 e 2.000 euro al mese in Google Ads, incassate 10.000. Con ROAS 13, stesso budget, sono 26.000. 16.000 euro al mese che forse state lasciando sul tavolo.</p>
-          <p>Un e-commerce con il vostro stesso punto di partenza li ha recuperati in 90 giorni. Poi ha fatto un conto diverso: quanto valeva avere lo stesso livello di attenzione anche su identità e comunicazione, non solo su Google Ads? Ha deciso che ne valeva la pena, ed è ancora con noi un anno dopo.</p>
-          <p>Vale la pena parlarne, partendo dal primo calcolo?</p>
+          <p>Guardando i principali store <span class="fld">{{Categoria}}</span> su <span class="fld">{{Piattaforma}}</span>, <span class="fld">{{Nome_Ecommerce}}</span> sembra distinguersi in positivo. Proprio per questo vale una domanda diversa da quella che farei a chi arranca: se il vostro Google Ads passasse da dove sta oggi a ROAS 13 — non solo per budget, ma perché canali e identità raccontano meglio chi siete — quanto fatturereste in più ogni mese?</p>
+          <p>Fate il conto. Poi ditemi se vale la videocall, mantenendo quello che già funziona.</p>
           <p class="sign">Francesco Del Buono<br>Customer Care Italia<br><span class="tag">Facciamo ROAS 13 dove gli altri fanno 5</span></p>
-          <p class="revised-note">Rivisto — secondo calcolo, sul resto: dopo il conto sul ROAS, un secondo conto esplicito su cosa vale l'attenzione al resto.</p>
         </div>
       </div>
     </div>
@@ -297,12 +279,12 @@
     <div class="step">
       <div class="step-num">08</div>
       <div class="card">
-        <div class="subject-row"><span class="env">✉</span><span class="subj">Hai fatto questo conto?</span></div>
+        <div class="subject-row"><span class="env">✉</span><span class="subj"><span class="fld">{{Nome_Ecommerce}}</span> ha un team?</span></div>
         <div class="body-text">
           <p>Ciao.</p>
-          <p>Guardando i principali store <span class="fld">{{Categoria}}</span> su <span class="fld">{{Piattaforma}}</span>, <span class="fld">{{Nome_Ecommerce}}</span> si distingue in positivo.</p>
-          <p>Proprio per questo vale la pena farvi una domanda diversa da quella che farei a chi arranca: se il vostro Google Ads passasse da dove sta oggi a ROAS 13, quanto fatturereste in più ogni mese?</p>
-          <p>Fate il conto. Poi ditemi se vale la videocall per vedere come arrivarci, mantenendo quello che già funziona.</p>
+          <p>Ho cercato i principali store <span class="fld">{{Categoria}}</span> su <span class="fld">{{Piattaforma}}</span>: <span class="fld">{{Nome_Ecommerce}}</span> non sembra avere un team interno dedicato a campagne, identità e canali insieme — eppure i risultati sembrano comunque esserci. Dice ancora di più sul potenziale.</p>
+          <p><span class="peer">Voi siete bravi in quello che fate. Noi pensiamo di esserlo nel nostro.</span> Pensate cosa può succedere se ci mettiamo insieme — non solo sulle campagne, su tutto quello che fa capire a chi vi guarda perché scegliervi.</p>
+          <p>Se le cose vanno già bene, figuratevi mettendoci insieme. Vale la pena scoprirlo?</p>
           <p class="sign">Francesco Del Buono<br>Customer Care Italia<br><span class="tag">Facciamo ROAS 13 dove gli altri fanno 5</span></p>
         </div>
       </div>
@@ -311,30 +293,13 @@
     <div class="step">
       <div class="step-num">09</div>
       <div class="card">
-        <div class="subject-row"><span class="env">✉</span><span class="subj"><span class="fld">{{Nome_Ecommerce}}</span> ha un team?</span></div>
+        <div class="subject-row"><span class="env">✉</span><span class="subj">Dati aperti, non slide</span></div>
         <div class="body-text">
           <p>Ciao.</p>
-          <p>Ho cercato i principali store <span class="fld">{{Categoria}}</span> su <span class="fld">{{Piattaforma}}</span>: <span class="fld">{{Nome_Ecommerce}}</span> non sembra avere un team interno dedicato alle campagne Google — eppure i risultati ci sono comunque. Il che dice ancora di più sul potenziale.</p>
-          <p>Tu sei bravo. Siete un e-commerce di successo. Noi siamo bravi, siamo professionisti di successo. Pensa cosa può succedere se ci mettiamo insieme — non solo sulle campagne, su tutto quello che fa crescere un brand.</p>
-          <p>Se le cose vanno già bene, figuratevi mettendoci insieme.</p>
-          <p>Vale la pena scoprirlo?</p>
-          <p class="sign">Francesco Del Buono<br>Customer Care Italia<br><span class="tag">Facciamo ROAS 13 dove gli altri fanno 5</span></p>
-        </div>
-      </div>
-    </div>
-
-    <div class="step">
-      <div class="step-num">10</div>
-      <div class="card">
-        <div class="subject-row"><span class="env">✉</span><span class="subj">Dati aperti, non slide</span><span class="badge">Riscritto</span></div>
-        <div class="body-text">
-          <p>Ciao.</p>
-          <p>Ultima email su questo tema. <span class="fld">{{Nome_Ecommerce}}</span> è tra gli store <span class="fld">{{Categoria}}</span> su <span class="fld">{{Piattaforma}}</span> messi meglio che ho analizzato.</p>
-          <p>Non vi propongo un audit fine a se stesso: vi propongo 20 minuti per capire se ha senso lavorare insieme — su identità, canali, comunicazione, oltre che su Google Ads. Il modo più onesto per iniziare quel discorso è partire da dati reali, aperti insieme, non da slide: guardiamo le vostre piattaforme Google e vediamo dove siete davvero.</p>
-          <p>È lo stesso punto di partenza da cui è partito un e-commerce comparabile al vostro, arrivato da ROAS 5 a 13 in 90 giorni — e che oggi lavora con noi su tutto il resto.</p>
+          <p>Ultima email su questo tema. <span class="fld">{{Nome_Ecommerce}}</span> sembra tra gli store <span class="fld">{{Categoria}}</span> su <span class="fld">{{Piattaforma}}</span> messi meglio che ho analizzato — ma i numeri, da soli, non dicono se identità e canali stanno già raccontando tutto il vostro valore.</p>
+          <p>Non vi propongo un audit fine a se stesso: vi propongo 20 minuti per guardare insieme dati reali — non slide — su campagne, canali e come vi raccontate oggi. È lo stesso punto di partenza da cui è partito un e-commerce comparabile al vostro, arrivato da ROAS 5 a 13 in 90 giorni, che oggi lavora con noi su tutto il resto.</p>
           <p>Se ha senso, ripartiamo da lì. Se non è il momento, nessun problema: resto a disposizione quando lo sarà.</p>
           <p class="sign">Francesco Del Buono<br>Customer Care Italia<br><span class="tag">Facciamo ROAS 13 dove gli altri fanno 5</span></p>
-          <p class="revised-note">Riscritto — era il punto più debole: la partnership diventa la richiesta esplicita della call, l'audit ROAS resta solo il modo più onesto per iniziarla.</p>
         </div>
       </div>
     </div>
